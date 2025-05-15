@@ -23,8 +23,8 @@ jobs:
             - name: "Checking Version"
               run: java --version
 
-            - name: "Clone the repository"
-              uses: actions/checkout@v2
+            # - name: "Clone the repository"
+            #   uses: actions/checkout@v2
 
             - name: "Complie the java code"
               run: javac Main.java
