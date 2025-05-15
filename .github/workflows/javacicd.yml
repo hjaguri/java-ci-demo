@@ -14,10 +14,12 @@ jobs:
             - name: "Checkout Code"
               uses: actions/checkout@v3
 
-            - name: "Setup JDK"
+            - name: "SetUp JDK"
               uses: actions/setup-java@v4
               with:
+                distribution: 'temurin'
                 java-version: '17'
+
 
             - name: "Checking Version"
               run: java --version
