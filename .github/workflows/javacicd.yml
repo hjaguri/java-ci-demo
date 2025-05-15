@@ -1,0 +1,18 @@
+name: "JAVA PROGRAMMING CICD"
+
+on:
+    push:
+        branches:
+            - main
+            - master
+
+jobs:
+    build-and-test:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: "Setup JDK"
+              uses: actions/setup-java@v4
+
+            - name: "Checking Version"
+              run: java --version
